@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ component install nib-styles/buttons
+    $ component install nib-options/buttons
 
 ## API
 
