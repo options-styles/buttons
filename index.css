@@ -1,0 +1,79 @@
+/**
+ * Basic button style
+ * All other buttons require this class
+ */
+
+.btn {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+  background: #1F7C07;
+  background: linear-gradient(to bottom,#2bac0a,#1f7c07);
+  appearance: none;
+  border-radius: 3px;
+  border: 1px solid #196406;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.1);
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-family: inherit;
+  line-height: 30px;
+  outline: 0;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px #196406;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #FFF;
+  background: #259408;
+  background: linear-gradient(to bottom,#31c40b,#1f7c07);
+}
+
+.btn:active {
+  color: #FFF;
+  background: #1F7C07;
+  box-shadow: none;
+}
+
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Icons used within buttons
+ */
+
+.btn i {
+  display: inline-block;
+  margin-top: -2px;
+}
+
+.btn i:first-child {
+  margin-right: 3px;
+}
+
+.btn i:last-child {
+  margin-left: 3px;
+}

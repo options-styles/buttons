@@ -1,0 +1,19 @@
+{
+  "name": "buttons",
+  "repo": "nib-styles/buttons",
+  "description": "Button styles",
+  "version": "0.1.4",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "index.css",
+    "lib/modifiers.css",
+    "lib/group.css"
+  ],
+  "images": [
+    "images/grey.png",
+    "images/chevron.png"
+  ]
+}

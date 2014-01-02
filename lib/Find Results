@@ -1,0 +1,70 @@
+Searching 8 files for "geadient"
+
+0 matches across 0 files
+
+
+Searching 8 files for "gradient"
+
+/Users/chrisbuttery/Sites/nib-styles/buttons/index.css:
+    9    box-sizing: border-box;
+   10    background: #1F7C07;
+   11:   background: linear-gradient(to bottom,#2bac0a,#1f7c07);
+   12    appearance: none;
+   13    border-radius: 3px;
+   ..
+   39    color: #FFF;
+   40    background: #259408;
+   41:   background: linear-gradient(to bottom,#31c40b,#1f7c07);
+   42  }
+   43
+
+/Users/chrisbuttery/Sites/nib-styles/buttons/lib/modifiers.css:
+  163  .btn--inverse {
+  164    background: #666;
+  165:   background: linear-gradient(top,#8c8c8c,#666);
+  166    color: #FFF;
+  167    border: 1px solid #4D4D4D;
+  ...
+  173  .btn--inverse:active {
+  174    background: #8C8C8C;
+  175:   background: linear-gradient(to bottom,#a6a6a6,#666);
+  176  }
+  177
+  ...
+  188  .btn--primary[disabled]:hover {
+  189    background: #FE9C00;
+  190:   background: linear-gradient(to bottom,#fec600,#fe9c00);
+  191    border: 1px solid #CB7D00;
+  192    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,0 1px 0 rgba(0, 0, 0, 0.1);
+  ...
+  196  .btn--primary:hover {
+  197    background: #E5B200;
+  198:   background: linear-gradient(to bottom,#ffd232,#fe9c00);
+  199  }
+  200
+  ...
+  276  .btn--info {
+  277    background: #FFF;
+  278:   background: linear-gradient(to bottom,#fff,#ddd);
+  279    border: 1px solid #B9B9B9;
+  280    color: #666;
+  ...
+  290    color: #666;
+  291    background: #FFF;
+  292:   background: linear-gradient(to bottom,#fff,#e5e5e5);
+  293  }
+  294
+  ...
+  300  }
+  301
+  302: .no-cssgradients .btn--secondary,
+  303: .no-cssgradients .btn--panel,
+  304: .no-cssgradients .btn--info {
+  305    background: url('../images/grey.png') bottom left repeat-x;
+  306  }
+  307
+  308: .no-cssgradients .btn--secondary.is-disabled {
+  309    background: #ddd;
+  310  }
+
+12 matches across 2 files

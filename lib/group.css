@@ -1,0 +1,19 @@
+/**
+ * Inactive state
+ */
+
+.btn-group .btn-group__active {
+  display: none;
+}
+
+/**
+ * Active states
+ */
+
+.btn-group.is-active .btn-group__inactive {
+  display: none;
+}
+
+.btn-group.is-active .btn-group__active {
+  display: inline-block;
+}
