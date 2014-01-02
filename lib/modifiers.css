@@ -1,0 +1,365 @@
+/**
+ * Makes the button uppercase. Useful for important actions
+ */
+
+.btn--uppercase {
+  text-transform: uppercase;
+}
+
+/**
+ * Tighter button than normal. Usually used with icons
+ */
+
+.btn--narrow {
+  padding: 0 12px;
+}
+
+/**
+ * Wider button than normal
+ */
+
+.btn--wide {
+  min-width: 100px;
+}
+
+/**
+ * Removes the border from the button making the plain button style
+ * sit better on darker backgrounds
+ */
+
+.btn--borderless {
+  border: 0;
+}
+
+/**
+ * Button with a thick dark border for use on light backgrounds
+ */
+
+.btn--bordered {
+  box-shadow: 0 1px 0 rgba(255,255,255, 0.5) inset, 0 1px 0 rgba(0,0,0, 0.1), 0 0 0 5px rgba(102,102,102, 0.2);
+}
+
+/**
+ * Button with a thick light border for use on darker backgrounds
+ */
+
+.btn--bordered-light {
+  box-shadow: 0 1px 0 rgba(255,255,255, 0.5) inset, 0 1px 0 rgba(0,0,0, 0.1), 0 0 0 5px rgba(255,255,255, 0.1);
+}
+
+/**
+ * Button with only an icon and no text. Use buttons as normal but
+ * wrap the button text in a span and add an icon inside. Placing
+ * the icon before or after the text will determine it's position
+ */
+
+.btn--icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/**
+ * Buttons with an icon on the left and text
+ */
+
+.btn--icon-text {
+  text-align: left;
+}
+
+/**
+ * Adds a drop shadow to the button
+ */
+
+.btn--shadow {
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  border: 0;
+}
+
+/**
+ * Darker button style
+ */
+
+.btn--dark {
+  background: #444;
+  color: #fff;
+  box-shadow: 0 0 0 5px rgba(102,102,102, 0.2);
+  text-shadow: none;
+  border: 0;
+}
+
+.btn--dark:hover {
+  background: #515151;
+}
+
+/**
+ * Smaller button
+ */
+
+.btn--small {
+  font-size: 11px;
+  line-height: 25px;
+}
+
+.btn--small.btn--narrow {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.btn--small.btn--uppercase {
+  font-size: 10px;
+}
+
+/**
+ * Larger button
+ */
+
+.btn--large {
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 300;
+  padding: 0 40px;
+}
+
+/**
+ * Full-width button
+ */
+
+.btn--full {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lt-ie8 .btn--full {
+  width: auto;
+}
+
+/**
+ * Slightly larger button
+ */
+
+.btn--medium {
+  font-size: 16px;
+  line-height: 38px;
+}
+
+.btn--medium.btn--wide {
+  min-width: 170px;
+}
+
+/**
+ * Hack
+ * @todo Remove this
+ */
+.btn--medium .icon-circle-white-arrow-right {
+  top: 2px;
+}
+
+/**
+ * Inverse button style
+ */
+
+.btn--inverse {
+  background: #666;
+  background: linear-gradient(to bottom,#8c8c8c,#666);
+  color: #FFF;
+  border: 1px solid #4D4D4D;
+  text-shadow: 0 1px 1px #4D4D4D;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset,0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn--inverse:hover,
+.btn--inverse:active {
+  background: #8C8C8C;
+  background: linear-gradient(to bottom,#a6a6a6,#666);
+}
+
+.btn--inverse.btn--medium {
+  line-height: 38px;
+}
+
+/**
+ * Primary button style
+ */
+
+.btn--primary,
+.btn--primary[disabled]:active,
+.btn--primary[disabled]:hover {
+  background: #FE9C00;
+  background: linear-gradient(to bottom,#fec600,#fe9c00);
+  border: 1px solid #CB7D00;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,0 1px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px #CB7D00;
+}
+
+.btn--primary:hover {
+  background: #E5B200;
+  background: linear-gradient(to bottom,#ffd232,#fe9c00);
+}
+
+.btn--primary:active {
+  color: #fff;
+  background: #CB7D00;
+}
+
+.btn--primary.btn--medium {
+  line-height: 38px;
+}
+
+/**
+ * Transparent button. It has the hit area of a button, but
+ * has no background or look like one at all
+ */
+
+.btn--transparent {
+  transition: opacity .2s;
+  line-height: 30px;
+  padding: 0 20px;
+  border: 0;
+  opacity: .7;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.btn--transparent:hover,
+.btn--transparent:active {
+  opacity: 1;
+  background: transparent;
+}
+
+.btn--transparent i {
+  margin-top: -3px;
+}
+
+/**
+ * Button with a grey border and text that appears on the left
+ */
+
+.btn-label {
+  padding: 5px;
+  background: #e6e6e6;
+  border-radius: 5px;
+  overflow: hidden;
+  float: right;
+}
+
+.btn-label__text {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #666;
+  padding: 0 20px;
+}
+
+.btn-label__text:empty {
+  display: none;
+}
+
+.btn-label__button {
+  float: right;
+}
+
+/**
+ * Secondary style
+ * Extended by btn--panel. This will need to be removed
+ * later and just used as classes in the DOM
+ */
+
+.btn--secondary,
+.btn--panel,
+.btn--info {
+  background: #FFF;
+  background: linear-gradient(to bottom,#fff,#ddd);
+  border: 1px solid #B9B9B9;
+  color: #666;
+  text-shadow: 0 1px 0 #FFF;
+}
+
+.btn--secondary:hover,
+.btn--secondary:active,
+.btn--panel:hover,
+.btn--panel:active,
+.btn--info:hover,
+.btn--info:active {
+  color: #666;
+  background: #FFF;
+  background: linear-gradient(to bottom,#fff,#e5e5e5);
+}
+
+.btn--secondary.is-disabled {
+  background: #DDD;
+  color: #808080;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.no-cssgradients .btn--secondary,
+.no-cssgradients .btn--panel,
+.no-cssgradients .btn--info {
+  background: url('../images/grey.png') bottom left repeat-x;
+}
+
+.no-cssgradients .btn--secondary.is-disabled {
+  background: #ddd;
+}
+
+.btn--secondary.btn--small,
+.btn--panel.btn--small,
+.btn--info.btn--small {
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+/**
+ * Button displays as a flat panel
+ */
+
+.btn--panel {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  padding: 0 10px;
+  border-radius: 0;
+}
+
+.btn--panel i {
+  margin-top: -3px;
+  margin-left: 0;
+}
+
+/**
+ * Button for showing more information
+ */
+
+.btn--info {
+  font-size: 11px;
+  line-height: 25px;
+  border-radius: 0;
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+.btn--info:after {
+  display: block;
+  content: '';
+  position: relative;
+  right: -3px;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../images/chevron.png') no-repeat top left;
+  height: 12px;
+  width: 12px;
+}
+
+.btn--info.is-active:after {
+  background-position: bottom left;
+}
